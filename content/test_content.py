@@ -49,8 +49,8 @@ for sentence, expected_sentiment in test_sentences:
         score = r.json()["score"]
         sentiment = 'positive' if score > 0 else 'negative'
         if sentiment == expected_sentiment:
-            logger.info("API returned %s sentiment as expected (score=%s)", sentiment, score)
+            logger.info("API returned a %s sentiment as expected (score=%s)", sentiment, score)
         else:
-            logger.error("API returned %s sentiment, when a %s was expected (score=%s)", 
+            logger.error("API returned a %s sentiment, when a %s one was expected (score=%s)", 
                          sentiment, expected_sentiment, score)
                       

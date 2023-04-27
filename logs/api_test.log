@@ -1,0 +1,120 @@
+﻿2023-04-27 16:35:19:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 16:35:19:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:35:19:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 16:35:19:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:35:19:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 16:35:19:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:35:19:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 16:35:19:INFO:authorization:API returned code 403 as expected
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 16:35:19:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 16:35:19:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 16:35:19:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 16:35:19:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 16:35:19:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 16:35:19:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 16:35:19:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 16:35:19:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 16:35:19:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 16:35:19:INFO:authentication:Requesting http://api:8000/permissions?username=alice&password=wonderland
+2023-04-27 16:35:19:INFO:authentication:API returned code 200 as expected
+2023-04-27 16:35:19:INFO:authentication:Requesting http://api:8000/permissions?username=bob&password=builder
+2023-04-27 16:35:19:INFO:authentication:API returned code 200 as expected
+2023-04-27 16:35:19:INFO:authentication:Requesting http://api:8000/permissions?username=clementine&password=mandarine
+2023-04-27 16:35:19:INFO:authentication:API returned code 403 as expected
+2023-04-27 16:40:07:INFO:authentication:Requesting http://api:8000/permissions?username=alice&password=wonderland
+2023-04-27 16:40:07:INFO:authentication:API returned code 200 as expected
+2023-04-27 16:40:07:INFO:authentication:Requesting http://api:8000/permissions?username=bob&password=builder
+2023-04-27 16:40:07:INFO:authentication:API returned code 200 as expected
+2023-04-27 16:40:07:INFO:authentication:Requesting http://api:8000/permissions?username=clementine&password=mandarine
+2023-04-27 16:40:07:INFO:authentication:API returned code 403 as expected
+2023-04-27 16:40:07:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 16:40:07:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:40:07:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 16:40:07:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:40:07:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 16:40:07:INFO:authorization:API returned code 200 as expected
+2023-04-27 16:40:07:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 16:40:07:INFO:authorization:API returned code 403 as expected
+2023-04-27 16:40:07:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 16:40:07:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 16:40:07:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 16:40:07:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 16:40:08:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 16:40:08:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 16:40:08:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 16:40:08:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 16:40:08:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 16:40:08:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 16:40:08:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 18:42:36:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 18:42:36:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:42:36:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 18:42:36:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:42:36:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 18:42:36:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:42:36:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 18:42:36:INFO:authorization:API returned code 403 as expected
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 18:42:36:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 18:42:36:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 18:42:36:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 18:42:36:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 18:42:36:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 18:42:36:INFO:authentication:Requesting http://api:8000/permissions?username=alice&password=wonderland
+2023-04-27 18:42:36:INFO:authentication:API returned code 200 as expected
+2023-04-27 18:42:36:INFO:authentication:Requesting http://api:8000/permissions?username=bob&password=builder
+2023-04-27 18:42:36:INFO:authentication:API returned code 200 as expected
+2023-04-27 18:42:36:INFO:authentication:Requesting http://api:8000/permissions?username=clementine&password=mandarine
+2023-04-27 18:42:36:INFO:authentication:API returned code 403 as expected
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 18:42:36:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 18:42:36:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 18:42:36:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 18:42:36:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 18:44:49:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+love+you
+2023-04-27 18:44:49:INFO:content:API returned positive sentiment as expected (score=0.6369)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 18:44:49:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=I+hate+you
+2023-04-27 18:44:49:INFO:content:API returned negative sentiment as expected (score=-0.5719)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 18:44:49:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful
+2023-04-27 18:44:49:INFO:content:API returned positive sentiment as expected (score=0.5994)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 18:44:49:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 18:44:49:INFO:content:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=that+sucks
+2023-04-27 18:44:49:INFO:content:API returned negative sentiment as expected (score=-0.3612)
+2023-04-27 18:44:49:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 18:44:49:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:44:49:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=alice&password=wonderland&sentence=whatever
+2023-04-27 18:44:49:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:44:49:INFO:authorization:Requesting http://api:8000/v1/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 18:44:49:INFO:authorization:API returned code 200 as expected
+2023-04-27 18:44:49:INFO:authorization:Requesting http://api:8000/v2/sentiment?username=bob&password=builder&sentence=whatever
+2023-04-27 18:44:49:INFO:authorization:API returned code 403 as expected
+2023-04-27 18:44:49:INFO:authentication:Requesting http://api:8000/permissions?username=alice&password=wonderland
+2023-04-27 18:44:49:INFO:authentication:API returned code 200 as expected
+2023-04-27 18:44:49:INFO:authentication:Requesting http://api:8000/permissions?username=bob&password=builder
+2023-04-27 18:44:49:INFO:authentication:API returned code 200 as expected
+2023-04-27 18:44:49:INFO:authentication:Requesting http://api:8000/permissions?username=clementine&password=mandarine
+2023-04-27 18:44:49:INFO:authentication:API returned code 403 as expected
