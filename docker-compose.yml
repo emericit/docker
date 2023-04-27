@@ -1,0 +1,42 @@
+services:
+  api:
+    image: datascientest/fastapi:1.0.0
+    ports:
+      - "8000:8000"
+    networks:
+      - test_suite
+  authentication:
+    image: authentication
+    networks:
+      - test_suite
+    environment:
+      - API_HOST=api
+      - LOG=1
+    volumes:
+      - ./logs:/usr/src/app/logs
+    depends_on:
+      - "api"
+  authorization:
+    image: authorization
+    networks:
+      - test_suite
+    environment:
+      - API_HOST=api
+      - LOG=1
+    volumes:
+      - ./logs:/usr/src/app/logs
+    depends_on:
+      - "api"
+  content:
+    image: content
+    networks:
+      - test_suite
+    environment:
+      - API_HOST=api
+      - LOG=1
+    volumes:
+      - ./logs:/usr/src/app/logs
+    depends_on:
+      - "api"
+networks:
+  test_suite:
