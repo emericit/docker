@@ -6,6 +6,9 @@ services:
     networks:
       - test_suite
   authentication:
+    build:
+      dockerfile: ./authentication/Dockerfile
+      context: ./authentication/  
     image: authentication
     networks:
       - test_suite
@@ -17,6 +20,9 @@ services:
     depends_on:
       - "api"
   authorization:
+    build:
+      dockerfile: ./authorization/Dockerfile
+      context: ./authorization/ 
     image: authorization
     networks:
       - test_suite
@@ -28,6 +34,9 @@ services:
     depends_on:
       - "api"
   content:
+    build:
+      dockerfile: ./content/Dockerfile
+      context: ./content/
     image: content
     networks:
       - test_suite
